@@ -71,8 +71,12 @@ public class Komplex {
         return Math.sqrt(Math.pow(re, 2) + Math.pow(im, 2));
     }
 
+    @Override
     public String toString() {
-        return this.re + " " + Math.signum(im) + " " + Math.abs(im); // test later
+        if (im < 0) {
+            return this.re + " - " + Math.abs(im) + "i";
+        }
+        return this.re + " + " + im + "i"; // test later
     }
 
     public Komplex[] getWurzel() {
