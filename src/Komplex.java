@@ -86,4 +86,14 @@ public class Komplex {
 
     }
 
+    public Komplex getSumme(Komplex z) {
+        return new Komplex(this.re + z.re, this.im + z.im);
+    }
+
+    public Komplex getProdukt(Komplex z) {
+        double betrag = this.getBetrag() * z.getBetrag();
+        return new Komplex(betrag * Math.cos(this.getArg() + z.getArg()), betrag * Math.sin(this.getArg() + z.getArg()));
+    }
+
+
 }
