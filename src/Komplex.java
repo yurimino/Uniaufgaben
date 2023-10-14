@@ -115,7 +115,7 @@ public class Komplex {
     public Komplex[] getWurzel() {
         Komplex[] wurzeln = new Komplex[2];
         double betrag = getBetrag();
-        double arg = getArg();
+        double arg = Math.atan2(this.im, this.re);
         for(int i = 0; i < 2; i++) { //use Moivre
             wurzeln[i] = new Komplex(Math.sqrt(betrag) * Math.cos((arg+(2*i*Math.PI))/2), Math.sqrt(betrag) * Math.sin((arg+(2*i*Math.PI))/2));
         }
