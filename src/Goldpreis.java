@@ -1,4 +1,4 @@
-import java.awt.*;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,14 +9,14 @@ import java.util.NoSuchElementException;
 public class Goldpreis {
 
 
-    private ArrayList<Goldtagespreis> list;
+    private final ArrayList<Goldtagespreis> list;
 
     public Goldpreis (String dateiname) throws IOException {
         this.list = new ArrayList<>();
         String[] splitLine;
         List<String> lines = Files.readAllLines(Path.of(dateiname));
         for (String line : lines) {
-            splitLine = line.split("  ");
+            splitLine = line.split(" {2}");
             System.out.println(splitLine[0] + " " + splitLine[1]);
             double price = 0;
             try{
