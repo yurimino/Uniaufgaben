@@ -28,7 +28,6 @@ public class Goldpreis {
         List<String> lines = Files.readAllLines(Path.of(dateiname));
         for (String line : lines) {
             splitLine = line.split(" {2}");
-            System.out.println(splitLine[0] + " " + splitLine[1]);
             double price = 0;
             try{
                 price = Double.parseDouble(splitLine[1]);
