@@ -2,10 +2,13 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-
+import java.text.DecimalFormat;
+import java.util.regex.Pattern;
 
 /**
  * represents a collection of gold price values over time
@@ -26,13 +29,17 @@ public class Goldpreis {
         this.list = new ArrayList<>();
         String[] splitLine;
         List<String> lines = Files.readAllLines(Path.of(dateiname));
+        DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getInstance();
+        decimalFormat.setParseBigDecimal(true);
+        decimalFormat.applyPattern("#,##0.00"); //allows parsing from the format given in the file
         for (String line : lines) {
-            splitLine = line.split(" {2}");
+            splitLine = line.split(Pattern.quote("\t"));
             double price = 0;
             try{
-                price = Double.parseDouble(splitLine[1]);
+                Number parsedNumber = decimalFormat.parse(splitLine[1]);
+                price = parsedNumber.doubleValue();
                 //catches the case that the day was a weekend or there is some mistake in the format
-            } catch(NumberFormatException e) {
+            } catch(ParseException e) {
                 if(splitLine[1].equals("kein Nachweis")) {
                     price = -1.;
                 } else {
