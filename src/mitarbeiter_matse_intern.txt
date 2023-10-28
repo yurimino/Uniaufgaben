@@ -1,0 +1,20 @@
+Tarek Ajouka;ajouka@itc.rwth-aachen.de
+Sarah Büttgen;buettgen@itc.rwth-aachen.de
+Jürgen Dietel;dietel@itc.rwth-aachen.de
+Philip Dorsch;dorsch@itc.rwth-aachen.de
+Thomas Eifert;eifert@itc.rwth-aachen.de
+Jacqueline Gottowik;gottowik@itc.rwth-aachen.de
+Leif Janissen;l.janissen@itc.rwth-aachen.de
+Thomas Janissen;janissen@itc.rwth-aachen.de
+Leo Kerojoki;Kerojoki@itc.rwth-aachen.de
+Claudia Keverpütz;keverpuetz@itc.rwth-aachen.de
+Bastian Küppers;kueppers@itc.rwth-aachen.de
+Sascha Michels;michels@itc.rwth-aachen.de
+Houssam Nasr;nasr@itc.rwth-aachen.de
+Hans Joachim Pflug;pflug@itc.rwth-aachen.de
+Torben Siekmann;siekmann@itc.rwth-aachen.de
+Marcel Vogler;vogler@itc.rwth-aachen.de
+Nicole Vonderbank;vonderbank@itc.rwth-aachen.de
+Daniel Weinholz;Weinholz@itc.rwth-aachen.de
+Benno Willemsen;willemsen@itc.rwth-aachen.de
+Tim Zimmerman;t.zimmermann@itc.rwth-aachen.de
