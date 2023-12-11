@@ -3,6 +3,9 @@ package Pokerspiel;
 import java.security.InvalidParameterException;
 import java.util.Comparator;
 
+/**
+ * BlattVergleich allows the comparison of two given Blatt objects to determine which card set wins the game
+ */
 public class BlattVergleich implements Comparator<Blatt> {
     /**
      * compares two hands of cards
@@ -31,7 +34,7 @@ public class BlattVergleich implements Comparator<Blatt> {
     }
 
     /**
-     * sees how often the same number appears in an array of the size 3
+     * determines how often the same number appears in an array of the size 3 and the deciding factor that is used to determine the bigger Blatt object in case two sets have an equal amount of identical numbers
      * @param arr the array to be analyzed
      * @return array with the amount of times the same number has appeared and the value of said number, or the sum of all three numbers if all have been different
      */
