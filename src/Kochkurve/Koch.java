@@ -1,7 +1,5 @@
-package Kochkurve;
+//package Kochkurve;
 
-import javax.sound.midi.Soundbank;
-import java.net.StandardSocketOptions;
 
 public class Koch {
 
